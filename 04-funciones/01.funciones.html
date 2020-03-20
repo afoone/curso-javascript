@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // Función estándar
+        function suma(a, b) {
+            return a + b;
+        }
+
+        document.write(suma(4, 3));
+        document.write("<br/>");
+
+
+        // Lambda
+        let multiplicacion = function(a,b) {
+            return a*b;
+        }
+        document.write(multiplicacion(6,5));
+        document.write("<br/>");
+
+        // Arrow
+        let division = (a,b) => {
+            return a/b;
+        }
+        document.write(division(6,3));
+        document.write("<br/>");
+
+
+        // Arrow si sólo hace el return
+        let modulo = (a,b) => a%b;
+        document.write(modulo(7,3));
+        document.write("<br/>");
+
+        // Arrow con return y con un sólo parámetro
+        let cuadrado = a => a*a;
+        document.write(cuadrado(5));
+        document.write("<br/>");
+
+
+    </script>
+    
+</body>
+</html>

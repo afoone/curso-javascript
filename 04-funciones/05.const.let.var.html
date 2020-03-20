@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Const, let y var</title>
+</head>
+
+<body>
+
+    <script>
+
+        function explainVar() {
+            var a = 10;
+            document.write(a);  // output 10
+            if (true) {
+                var a = 20;
+                document.write(a); // output 20
+            }
+            document.write(a);  // output 20
+        }
+        explainVar();
+
+        document.write("<hr>")
+        function explainLet() {
+            let a = 10;
+            document.write(a);  // output 10
+            if (true) {
+                let a = 20;
+                document.write(a); // output 20
+            }
+            document.write(a);  // output 10
+        }
+        explainLet();
+
+    </script>
+</body>
+
+</html>

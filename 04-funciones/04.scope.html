@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope</title>
+</head>
+<body>
+
+    <script>
+        // Global Scope
+        let a = 10;
+
+        let escribeEdad = nombre => {
+            document.write(nombre+ " tiene "+ a + " años");
+        } 
+
+        
+        escribeEdad("Juan");
+
+        // Nombre tiene Local Scope
+        document.write(nombre);
+
+
+    </script>
+    
+</body>
+</html>

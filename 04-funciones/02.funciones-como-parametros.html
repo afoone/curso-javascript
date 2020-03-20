@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funciones como parametros</title>
+</head>
+<body>
+    <script>
+
+
+        let suma = (a,b) => a+b;
+
+        let escribeResultado = (operacion, a, b)  => {
+            document.write(operacion(a,b));
+        }
+
+        escribeResultado( suma, 4, 6);
+
+    </script>
+</body>
+</html>
